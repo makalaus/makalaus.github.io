@@ -1,38 +1,51 @@
 <html>
 <head>
     <title>Makalaus</title>
-    <script type="text/javascript">
-        
-    </script>
+    
     <style>
         body{
             font-family: arial;
         }
-            img{
-                width:300px;
-            }
-            .hide{
-                display: none;
-            }
+        img{
+            width:300px;
+        }
+        .hide{
+            display: none;
+        }
     </style>
-    <meta property="og:image"  content="img/stock-photo-aerial-view-of-the-tourist-ship-in-the-bay-of-stavanger-norway-706761853.jpg" /> 
+    <meta property="og:image"  content="" /> 
 </head>
 <body>
 <h1>Makalaus</h1>
 <p>En siden med ting og tang</p>
 <img src="img/bilde2.jpg" class="hide">
-    <div role="image" id="i1234">
+    <div class="background" role="image" id="i1234">
         <style type="text/css">
             #i1234 { 
                 width:300px;
                 height: 300px;
                 border: solid 1px red;
-                background-image: url(img/bilde1.jpg); 
+                background-image: url(img/stock-photo-aerial-view-of-the-tourist-ship-in-the-bay-of-stavanger-norway-706761853.jpg); 
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: 50% 50%;
             }    
         </style>
     </div>
+    <hr>
+    <img src="img/bilde1.jpg">
 </body>
+
+<script src="jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $(".background").each(function(){
+        const bgimage = $(this).css('background-image');
+        console.log($('meta[property="og:image"]').attr('content'));
+        var ogImage = bgimage.substring(bgimage.lastIndexOf('("')+2,bgimage.lastIndexOf('")'));
+        $('meta[property="og:image"]').attr('content',ogImage);
+        
+    });
+});
+</script>
 </html>
