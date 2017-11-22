@@ -12,11 +12,20 @@
                 display: none;
             }
     </style>
+    <meta property="og:image"  content="" /> 
 </head>
 <body>
 <h1>Makalaus</h1>
 <p>En siden med ting og tang</p>
 <img src="img/bilde2.jpg" class="hide">
-<img src="img/bilde1.jpg">
+    <div role="image" id="i1234">
+        <style type="text/css">
+            #i1234 { 
+                width:300px;
+                border: solid 1px red;
+                background-image: url(/img/bilde1.jpg); 
+            }    
+        </style>
+    </div>
 </body>
 </html>
