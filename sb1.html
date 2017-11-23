@@ -13,7 +13,7 @@
                 display: none;
             }
         </style>
-        <meta property="og:image"  content="https://makalaus.github.io/img/bilde1.jpg" /> 
+        <meta property="og:image"  content="../img/bilde1.jpg" /> 
     </head>
     <body>
     <img src="../img/smn-logo.jpeg">
@@ -44,7 +44,7 @@
             const bgimage = $(this).css('background-image');
             console.log($('meta[property="og:image"]').attr('content'));
             var ogImage = bgimage.substring(bgimage.lastIndexOf('("')+2,bgimage.lastIndexOf('")'));
-            $('meta[property="og:image"]').attr('content',ogImage);
+           // $('meta[property="og:image"]').attr('content',ogImage);
             
         });
     });
