@@ -6,10 +6,15 @@
         body{
             font-family: arial;
         }
+        .header, .main{
+            max-width: 800px;
+            margin: auto;
+        }
         img{
             width: 100%;
             height: 300px;
             object-fit: cover;
+            margin-bottom: 5px;
         }
         .images-wrap{
             display: flex;
@@ -17,26 +22,29 @@
         .images-wrap__image{
             width: 300px;
             margin: 20px;
+            text-align: center;
         }
         
     </style>
    
 </head>
 <body>
-    <h1>Makalaus</h1>
-    <p>Klær og ting laget av meg</p>
-    <hr>
-    
-    <div class="images-wrap">
-        <div class="images-wrap__image">
-            <img src="img/bilde1.jpg">
-            <span class="image-text">Sadie dress fra Tilly end the buttons</span>
+    <header>
+        <h1>Makalaus</h1>
+        <p>Klær og ting laget av meg</p>
+    </header>
+    <main>
+        <div class="images-wrap">
+            <div class="images-wrap__image">
+                <img src="img/bilde1.jpg">
+                <span class="image-text">Sadie dress fra Tilly and the buttons</span>
+            </div>
+            <div class="images-wrap__image">
+                <img src="https://scontent-arn2-1.cdninstagram.com/vp/e98bdadef1c2bd8b4ebc94dec4286bb8/5DB790A2/t51.2885-15/sh0.08/e35/s640x640/58410220_2083858451713016_2927659221377945089_n.jpg?_nc_ht=scontent-arn2-1.cdninstagram.com">
+                <span class="image-text">Wrap kjole fra Handemade boka</span>
+            </div>
         </div>
-        <div class="images-wrap__image">
-            <img src="https://scontent-arn2-1.cdninstagram.com/vp/e98bdadef1c2bd8b4ebc94dec4286bb8/5DB790A2/t51.2885-15/sh0.08/e35/s640x640/58410220_2083858451713016_2927659221377945089_n.jpg?_nc_ht=scontent-arn2-1.cdninstagram.com">
-            <span class="image-text">Wrap kjole fra Handemade boka</span>
-        </div>
-    </div>
+    </main>
 </body>
 
 <script src="jquery-3.2.1.min.js"></script>
