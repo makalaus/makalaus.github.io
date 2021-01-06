@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>SB1</title>
+  </head>
+  <body>
+    <header>
+      [logo svg]
+    </header>
+    <main>
+      <h1>Sparebank 1 test </h1>
+      <p>Dette er bare en test side</p>
+      [bilde]
+    </main>
+  </body>
+</html>
