@@ -1,0 +1,16 @@
+<html lang="nb">
+<head></head>
+<body>
+  <header>
+    [Logo svg]
+  </header>
+  <main>
+    <h1>SB1 test</h1>
+    <p>Dette er en test side for å raskt kunne teste deling på some</p>
+    [Bilde]
+  </main>
+  <footer>
+    <a href="https://www.sparebank1.no">Sparebank 1</a>
+  </footer>
+</body>
+</html>
