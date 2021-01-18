@@ -1,1 +1,3 @@
-document.getElementById('phone').innerText.replace(/ /g, '');
+var phone = document.getElementById('phone');
+console.log(phone);
+phone.innerHTML.replace(/ /g, '');
