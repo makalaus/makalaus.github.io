@@ -1,3 +1,3 @@
 var phone = document.getElementById('phone');
 console.log(phone.getAttribute('href'));
-phone.innerHTML = 'tel:' + phone.innerText.replace(/ /g, '');
+phone.setAttribute('href','tel:' + phone.innerText.replace(/ /g, ''));
